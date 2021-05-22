@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_formulas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.softwera.jayesh.allformulas.Formulas">
+
+    <TextView
+        android:id="@+id/formulaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:text="Chapter"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#b80000"
+        android:textSize="30sp"
+        android:textStyle="bold|normal" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/formulaRec"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/formulaAdView"
+        android:layout_below="@+id/formulaText"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/formulaAdView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_home_footer"
+        tools:adSize="S" />
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.softwera.jayesh.allformulas.About">
+
+    <TextView
+        android:id="@+id/aboutMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="About the Developer"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#b80000"
+        android:textSize="30sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/allAboutMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutMe"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="About Me"
+        android:textColor="#b80000"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/rateMyApp"
+        android:layout_width="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/allAboutMe"
+        android:layout_centerHorizontal="true"
+        android:background="#b80000"
+        android:text="   Rate All Formulas   "
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Pro Version Text"
+        android:textColor="#b80000"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:id="@+id/proVersionText"
+        android:layout_below="@+id/rateMyApp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/proVersionButton"
+        android:layout_width="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_height="30dp"
+        android:background="#b80000"
+        android:text="   Download All Formulas Pro   "
+        android:textColor="#ffffff"
+        android:layout_below="@+id/proVersionText"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:id="@+id/reqButton"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="#b80000"
+        android:text="   My Request   "
+        android:textColor="#ffffff"
+        android:layout_below="@+id/proVersionButton"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

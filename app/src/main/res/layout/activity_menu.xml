@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.softwera.jayesh.allformulas.Menu">
+
+    <TextView
+        android:id="@+id/pformula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:text="All Formulas"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#b80000"
+        android:textSize="40sp"
+        android:textStyle="bold|normal" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <Button
+        android:id="@+id/btnPhysics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gridLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/pformula"
+        android:layout_column="1"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="2dp"
+        android:layout_toLeftOf="@+id/gridLayout"
+        android:background="#b80000"
+        android:gravity="center_vertical|center_horizontal|end"
+        android:text="Physics"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold|normal" />
+
+    <Button
+        android:id="@+id/btnChemistry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gridLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pformula"
+        android:layout_column="1"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="8dp"
+        android:layout_row="0"
+        android:layout_toEndOf="@+id/btnPhysics"
+        android:layout_toRightOf="@+id/btnPhysics"
+        android:background="#b80000"
+        android:text="Chemistry"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold|normal" />
+
+    <Button
+        android:id="@+id/btnMaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/MenuAdView"
+        android:layout_alignEnd="@+id/gridLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/gridLayout"
+        android:layout_below="@+id/btnPhysics"
+        android:layout_column="1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_row="0"
+        android:background="#b80000"
+        android:text="Maths"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold|normal" />
+
+    <Button
+        android:id="@+id/btnGeneral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/MenuAdView"
+        android:layout_alignEnd="@+id/btnChemistry"
+        android:layout_alignRight="@+id/btnChemistry"
+        android:layout_below="@+id/gridLayout"
+        android:layout_column="1"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_row="0"
+        android:layout_toRightOf="@+id/gridLayout"
+        android:background="#b80000"
+        android:text="General"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold|normal" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:textStyle="bold|normal" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_dialog_info"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/MenuAdView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_home_footer"
+        tools:adSize="M" />
+</RelativeLayout>

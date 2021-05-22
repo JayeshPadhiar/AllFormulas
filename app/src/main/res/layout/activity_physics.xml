@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_physics"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.softwera.jayesh.allformulas.Physics">
+
+    <TextView
+        android:id="@+id/phyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:text="Physics"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#b80000"
+        android:textSize="40sp"
+        android:textStyle="bold|normal" />
+
+    <ListView
+        android:id="@+id/phyListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/PhyAdView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/phyText"
+        android:divider="@android:color/white"
+        android:dividerHeight="5dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:saveEnabled="true" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/PhyAdView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_home_footer"
+        tools:adSize="M" />
+</RelativeLayout>
